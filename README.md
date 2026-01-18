@@ -52,5 +52,4 @@ The project demonstrates how backend logic written in Python can be connected wi
 
 ---
 
-## 📂 Project Structure
 
