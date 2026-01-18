@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Number Guessing Game</h1>
+        <div id="menu">
+            <button id="single-player-btn">Single Player</button>
+            <button id="multiplayer-btn">Multiplayer (2-8 Players)</button>
+            <button id="leaderboard-btn">View Leaderboard</button>
+        </div>
+        <div id="level-selection" style="display: none;">
+            <h2>Select Level</h2>
+            <button class="level-btn" data-level="1">Novice Explorer (1-50)</button>
+            <button class="level-btn" data-level="2">Master Seeker (1-100)</button>
+            <button class="level-btn" data-level="3">Legendary Hunter (1-500)</button>
+        </div>
+        <div id="game-area" style="display: none;">
+            <p id="feedback"></p>
+            <input type="number" id="guess-input" placeholder="Enter your guess">
+            <button id="guess-btn">Guess</button>
+            <button id="quit-btn">Quit</button>
+            <p id="attempts">Attempts: 0</p>
+        </div>
+        <div id="multiplayer-setup" style="display: none;">
+            <label for="player-count">Number of Players (2-8):</label>
+            <input type="number" id="player-count" min="2" max="8" value="2">
+            <button id="start-multiplayer-btn">Start</button>
+        </div>
+        <div id="leaderboard" style="display: none;">
+            <h2>Global Leaderboard</h2>
+            <select id="level-filter">
+                <option value="1">Novice Explorer</option>
+                <option value="2">Master Seeker</option>
+                <option value="3">Legendary Hunter</option>
+            </select>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
